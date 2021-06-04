@@ -1,0 +1,50 @@
+{
+  "name": "webnuvola/laravel-server-events",
+  "description": "Send server events to Facebook (Conversion API)",
+  "keywords": [
+    "laravel", "facebook", "conversion-api"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fabio Cagliero",
+      "email": "fabio@webnuvola.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "ext-json": "*",
+    "laravel/framework": "^8.45"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.5",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Webnuvola\\Laravel\\ServerEvents\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Webnuvola\\Laravel\\ServerEvents\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit --testdox"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Webnuvola\\Laravel\\ServerEvents\\ServerEventsServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
